@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="453.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="75.0" minHeight="10.0" prefHeight="70.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="142.0" minHeight="10.0" prefHeight="71.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="156.0" minHeight="10.0" prefHeight="76.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="156.0" minHeight="10.0" prefHeight="70.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="110.0" minHeight="10.0" prefHeight="85.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="75.0" minHeight="10.0" prefHeight="73.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Weapons" wrappingWidth="81.21630859375" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Protections" wrappingWidth="79.21630859375" GridPane.rowIndex="2" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Functional" wrappingWidth="88.21630859375" GridPane.rowIndex="4" />
+      <ImageView fitHeight="60.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+         <image>
+            <Image url="@../../images/basic_sword.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="67.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+         <image>
+            <Image url="@../../images/stake.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="62.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3">
+         <image>
+            <Image url="@../../images/staff.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="53.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <image>
+            <Image url="@../../images/armour.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="54.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
+         <image>
+            <Image url="@../../images/shield.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="63.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="2">
+         <image>
+            <Image url="@../../images/helmet.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="66.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <image>
+            <Image url="@../../images/brilliant_blue_new.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="57.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="4">
+         <image>
+            <Image url="@../../images/doggiecoin.png" />
+         </image>
+      </ImageView>
+   </children>
+</GridPane>
