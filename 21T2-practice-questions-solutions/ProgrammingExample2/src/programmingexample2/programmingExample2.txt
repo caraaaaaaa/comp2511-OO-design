@@ -1,0 +1,17 @@
+We reduce code coupling by ensuring the relationship between 
+Passenger and FlightSeat is unidirectional (the directed chain of relationships are 
+BookingSystem->Passenger->FlightSeat and BookingSystem->Flight->FlightSeat).
+
+Law of Demeter is satisfied through the use of method forwarding.
+
+Liskov Substitution Principle is not applicable, because there are no subclasses. 
+No specific design patterns were used in this implementation.
+
+It is important to note that inheritance and OOP patterns were not necessary in this implementation 
+to represent different classes of seat (first class, business class, economy) 
+because there is no special behaviour differentiating these seats. 
+A more complex problem may require this - for example, 
+if the problem was extended to include the requirement for different promotional deals on seats 
+(such as 2 for 1 business class tickets, buy 2 get 1 free economy seats), 
+we would need to use inheritance to model the subtypes of FlightSeat, 
+and apply a visitor pattern to implement the promotional deals.

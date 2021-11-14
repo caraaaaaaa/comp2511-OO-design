@@ -1,0 +1,8 @@
+We reduce code coupling by ensuring association relationships are unidirectional (the directed chain of relationships is HotelBookingSystem->Hotel->Room->Booking).
+
+Liskov Substitution Principle is fully satisfied, since the small/medium/large rooms can be fully substituted for Room.
+Law of Demeter is satisfied through the use of method forwarding.
+Factory pattern is used for creation of a room with a string corresponding to its type. This simplifies creation of rooms from user input, e.g. from a configuration file or the command line.
+
+In a more complex implementation, we may be required to create a customer class which stores a collection of bookings. A collection of Customer objects would also be stored in HotelBookingSystem. We would want to be careful that the Booking class does not store a Customer object, so that the relationship is unidirectional and coupling remains low.
+A Customer class is not required in this scenario because authentication/authorization was not required, and no additional information is being stored about each customer apart from the customer's name, and customers have no special behaviour in the system (the lack of authentication/authorization means we aren't enforcing that only customers are utilizing the functionality assigned to customers in the specification).
